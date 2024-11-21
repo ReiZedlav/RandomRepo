@@ -149,7 +149,7 @@ body{
 
 .createNew input{
     margin-top: 10px;
-    padding: 8px;
+    padding: 6px;
     border: none;
     border-radius: 10px;
 }
@@ -161,7 +161,7 @@ body{
 
 .modifyEmployee input{
     margin-top: 8px;
-    padding: 7px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
 }
@@ -249,7 +249,7 @@ body{
 
 .createProject input{
     margin-top: 15px;
-    padding: 15px;
+    padding: 7px;
     border: none;
     border-radius: 10px;
 }
@@ -261,7 +261,7 @@ body{
 
 .reviseProject input{
     margin-top: 15px;
-    padding: 12px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
 }

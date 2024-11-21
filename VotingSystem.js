@@ -6,11 +6,12 @@ function queryForm() {
     div.innerHTML = `
     <div class=idQuery>
         <form>
-            <label> EMPLOYEE QUERYING SYSTEM </label>
+            <label> VOTER QUERYING SYSTEM </label>
             <input type="text" placeholder="Query By ID: ">
             <input type="text" placeholder="First Name...">
-            <input type="text" placeholder="Middle Name...">
             <input type="text" placeholder="Last Name...">
+            <input type="text" placeholder="Email Address...">
+            <input type="text" placeholder="Phone Number...">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -28,17 +29,20 @@ function createForm() {
     div.innerHTML = `
     <div class="createNew">
         <form>
-            <label> INSERT A NEW EMPLOYEE </label>
+            <label> REGISTER A VOTER </label>
             <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Middle Name: ">
             <input type="text" placeholder="Last Name: ">
             <input type="text" placeholder="Address: ">
+            <input type="text" placeholder="City: ">
+            <input type="text" placeholder="Barangay: ">
+            <input type="text" placeholder="Age: ">
+            <input type="text" placeholder="Birthday: ">
+            <input type="text" placeholder="Gender: ">
+            <input type="text" placeholder="Status: ">
             <input type="text" placeholder="Phone Number: ">
             <input type="text" placeholder="Email: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Assign to Department: ID">
-            <input type="text" placeholder="Start of Employment: ">
-            <input type="text" placeholder="Rate per Hour: ">
+            
+            
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -55,18 +59,19 @@ function modifyForm() {
     div.innerHTML = `
     <div class="modifyEmployee">
         <form>
-            <label> MODIFY EMPLOYEE RECORDS </label>
-            <input type="text" placeholder="EMPLOYEE ID: ">
+            <label> MODIFY VOTER RECORDS </label>
+            <input type="text" placeholder="VOTER ID: ">
             <input type="text" placeholder="First Name: ">
-            <input type="text" placeholder="Middle Name: ">
             <input type="text" placeholder="Last Name: ">
             <input type="text" placeholder="Address: ">
+            <input type="text" placeholder="City: ">
+            <input type="text" placeholder="Barangay: ">
+            <input type="text" placeholder="Age: ">
+            <input type="text" placeholder="Birthday: ">
+            <input type="text" placeholder="Gender: ">
+            <input type="text" placeholder="Status: ">
             <input type="text" placeholder="Phone Number: ">
             <input type="text" placeholder="Email: ">
-            <input type="text" placeholder="Position: ">
-            <input type="text" placeholder="Assign to Project: ID">
-            <input type="text" placeholder="Start of Employment: ">
-            <input type="text" placeholder="Rate per Hour: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -83,9 +88,9 @@ function terminateForm() {
     div.innerHTML = `
     <div class="terminateEmployee">
         <form>
-            <label> TERMINATE EXISTING EMPLOYEE </label>
-            <input type="text" placeholder="EMPLOYEE ID:">
-            <input type="submit" id="buttonCursor" class="terminateSize-submit">
+            <label> TERMINATE EXISTING VOTER </label>
+            <input type="text" placeholder="VOTER ID:">
+            <input type="submit" id="buttonCursor">
         </form>
     </div>
     `;
@@ -264,7 +269,7 @@ function mutateToCandidates(){
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="dissolveForm()"> Terminate </button>
+            <button onclick="dissolveForm()"> Disqualify </button>
         </div>
     `;
 
@@ -282,19 +287,19 @@ function mutateToCandidates(){
 
 
 
-// DEPARTMENT FORMS
+// DEPARTMENT FORMS - findme
 
 function exploreForm() {
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
     <div class="exploreDepartment">
         <form>
-            <label> EXPLORE DEPARTMENTS </label>
-            <input type="text" placeholder="Department ID: ">
-            <input type="text" placeholder="Department Name: ">
-            <input type="text" placeholder="Department Head: ">
-            <input type="text" placeholder="Department Floor: ">
-            <input type="text" placeholder="Department Type: ">
+            <label> SEARCH A CANDIDATE </label>
+            <input type="text" placeholder="CANDIDATE ID: ">
+            <input type="text" placeholder="First Name: ">
+            <input type="text" placeholder="Last Name: ">
+            <input type="text" placeholder="Position: ">
+            <input type="text" placeholder="Party: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -311,12 +316,8 @@ function buildForm() {
     div.innerHTML = `
     <div class="buildDepartment">
         <form>
-            <label> ESTABLISH DEPARTMENT </label>
-            <input type="text" placeholder="Department Name: ">
-            <input type="text" placeholder="Department Head: ">
-            <input type="text" placeholder="Department Floor: ">
-            <input type="text" placeholder="Department Type: ">
-            <input type="text" placeholder="Department Goals: ">
+            <label> CONFIRM CANDIDATE FROM NOMINEES </label>
+            <input type="text" placeholder="Nominee ID: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -331,15 +332,19 @@ function buildForm() {
 function reworkForm(){
     const div = document.querySelector('.formShifter');
     div.innerHTML = `
-    <div class="reworkDepartment">
+    <div class="reviseProject">
         <form>
-            <label> REVISE A DEPARTMENT </label>
-            <input type="text" placeholder="Department ID">
-            <input type="text" placeholder="Department Name: ">
-            <input type="text" placeholder="Department Head: ">
-            <input type="text" placeholder="Department Floor: ">
-            <input type="text" placeholder="Department Type: ">
-            <input type="text" placeholder="Department Goals: ">
+            <label> UPDATE CANDIDATE DATA </label>
+            <input type="text" placeholder="CANDIDATE ID: ">
+            <input type="text" placeholder="First Name: ">
+            <input type="text" placeholder="Last Name: ">
+            <input type="text" placeholder="Age: ">
+            <input type="text" placeholder="Gender: ">
+            <input type="text" placeholder="Birthdate: ">
+            <input type="text" placeholder="Status: ">
+            <input type="text" placeholder="Position: ">
+            <input type="text" placeholder="Party: ">
+            <input type="text" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -357,9 +362,9 @@ function dissolveForm() {
     div.innerHTML = `
     <div class="dissolveDepartment">
         <form>
-            <label> DISSOLVE EXISTING DEPARTMENT </label>
-            <input type="text" placeholder="DEPARTMENT ID:">
-            <input type="submit" id="buttonCursor" class="terminateSize-submit">
+            <label> DISQUALIFY A CANDIDATE </label>
+            <input type="text" placeholder="CANDIDATE ID:">
+            <input type="submit" id="buttonCursor">
         </form>
     </div>
     `;
@@ -456,7 +461,7 @@ function mutateToNominees(){
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="abandonForm()"> Abandon </button>
+            <button onclick="abandonForm()"> Disqualify </button>
         </div>
     `;
 
@@ -477,13 +482,13 @@ function showForm() {
     div.innerHTML = `
     <div class="showProject">
         <form>
-            <label> QUERY A PROJECT </label>
-            <input type="text" placeholder="Project ID: ">
-            <input type="text" placeholder="Project Name: ">
-            <input type="text" placeholder="Project Head: ">
-            <input type="text" placeholder="Project Status: ">
-            <input type="text" placeholder="Project Priority: ">
-            <input type="text" placeholder="Project Department: ">
+            <label> VIEW NOMINEES </label>
+            <input type="text" placeholder="Nominee ID: ">
+            <input type="text" placeholder="First Name: ">
+            <input type="text" placeholder="Last Name: ">
+            <input type="text" placeholder="Position: ">
+            <input type="text" placeholder="Party: ">
+            <input type="text" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -500,13 +505,16 @@ function createProjectForm() {
     div.innerHTML = `
     <div class="createProject">
         <form>
-            <label> CREATE A PROJECT </label>
-            <input type="text" placeholder="Project Name: ">
-            <input type="text" placeholder="Project Head: ">
-            <input type="text" placeholder="Project Status: ">
-            <input type="text" placeholder="Project Priority: ">
-            <input type="text" placeholder="Project Department: ">
-            <input type="text" placeholder="Project Description: ">
+            <label> INSERT NOMINEE DATA </label>
+            <input type="text" placeholder="First Name: ">
+            <input type="text" placeholder="Last Name: ">
+            <input type="text" placeholder="Age: ">
+            <input type="text" placeholder="Gender: ">
+            <input type="text" placeholder="Birthdate: ">
+            <input type="text" placeholder="Status: ">
+            <input type="text" placeholder="Position: ">
+            <input type="text" placeholder="Party: ">
+            <input type="text" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -523,14 +531,17 @@ function reviseForm() {
     div.innerHTML = `
     <div class="reviseProject">
         <form>
-            <label> REVISE A PROJECT </label>
-            <input type="text" placeholder="PROJECT ID: ">
-            <input type="text" placeholder="Project Name: ">
-            <input type="text" placeholder="Project Head: ">
-            <input type="text" placeholder="Project Status: ">
-            <input type="text" placeholder="Project Priority: ">
-            <input type="text" placeholder="Project Department: ">
-            <input type="text" placeholder="Project Description: ">
+            <label> UPDATE NOMINEE DATA </label>
+            <input type="text" placeholder="NOMINEE ID: ">
+            <input type="text" placeholder="First Name: ">
+            <input type="text" placeholder="Last Name: ">
+            <input type="text" placeholder="Age: ">
+            <input type="text" placeholder="Gender: ">
+            <input type="text" placeholder="Birthdate: ">
+            <input type="text" placeholder="Status: ">
+            <input type="text" placeholder="Position: ">
+            <input type="text" placeholder="Party: ">
+            <input type="text" placeholder="City: ">
             <input type="submit" id="buttonCursor">
         </form>
     </div>
@@ -547,9 +558,9 @@ function abandonForm() {
     div.innerHTML = `
     <div class="abandonProject">
         <form>
-            <label> ABANDON EXISTING PROJECT </label>
-            <input type="text" placeholder="PROJECT ID:">
-            <input type="submit" id="buttonCursor" class="terminateSize-submit">
+            <label> DISQUALIFY EXISTING NOMINEE </label>
+            <input type="text" placeholder="NOMINEE ID:">
+            <input type="submit" id="buttonCursor">
         </form>
     </div>
     `;
