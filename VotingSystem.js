@@ -183,12 +183,12 @@ function terminateForm() {
 
 //mutateToEmployees
 
-function mutateToEmployees(){
+function mutateToVoters(){
     const sideBar = document.querySelector('.external-sidebar');
 
     sideBar.innerHTML = `
         <div class="external-sidebar-projname">
-            <h2> EMPLOYEES <h2>
+            <h2> VOTERS <h2>
         </div>
 
         <div class="external-sidebar-button">
@@ -196,7 +196,7 @@ function mutateToEmployees(){
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="createForm()"> Recruit </button>
+            <button onclick="createForm()"> Register </button>
         </div>
 
         <div class="external-sidebar-button">
@@ -204,7 +204,7 @@ function mutateToEmployees(){
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="terminateForm()"> Terminate </button>
+            <button onclick="terminateForm()"> Purge </button>
         </div>
     `;
 
@@ -244,27 +244,27 @@ function mutateToEmployees(){
 
 //mutateToDepartments
 
-function mutateToDepartments(){
+function mutateToCandidates(){
     const sideBar = document.querySelector('.external-sidebar');
     sideBar.innerHTML = `
         <div class="external-sidebar-projname">
-            <h2> DEPARTMENT <h2>
+            <h2> CANDIDATES <h2>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="exploreForm()"> Explore </button>
+            <button onclick="exploreForm()"> View </button>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="buildForm()"> Build </button>
+            <button onclick="buildForm()"> Confirm </button>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="reworkForm()"> Rework </button>
+            <button onclick="reworkForm()"> Update </button>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="dissolveForm()"> Dissolve </button>
+            <button onclick="dissolveForm()"> Terminate </button>
         </div>
     `;
 
@@ -436,23 +436,23 @@ function dissolveForm() {
 
 
 
-function mutateToProjects(){
+function mutateToNominees(){
     const sideBar = document.querySelector('.external-sidebar');
     sideBar.innerHTML = `
         <div class="external-sidebar-projname">
-            <h2> PROJECTS <h2>
+            <h2> NOMINEES <h2>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="showForm()"> Show </button>
+            <button onclick="showForm()"> View </button>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="createProjectForm()"> Create </button>
+            <button onclick="createProjectForm()"> Add </button>
         </div>
 
         <div class="external-sidebar-button">
-            <button onclick="reviseForm()"> Revise </button>
+            <button onclick="reviseForm()"> Update </button>
         </div>
 
         <div class="external-sidebar-button">
